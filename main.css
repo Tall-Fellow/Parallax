@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    height: 200vh;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#headerBottomLayer {
+    background: #000 url("Media/austria.jpg") no-repeat center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#headerTopLayer {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+
+    #headerTopLayer h1 {
+        font-size: 350%;
+        color: #ffffff;
+        margin: 0;
+    }
