@@ -11,14 +11,25 @@ body {
     height: 100vh;
 }
 
-#headerTopLayer {
+#headerTopText {
+    position: fixed;
+    transform: translate(50%, 0);
+    top: 60px;
+    font-size: 350%;
     text-align: center;
-    position: relative;
-    top: 10vh;
+    width: 50%;
+    color: #ffffff;
+    margin: 0;
+    transition: transform 0.4s ease-out;
 }
 
-    #headerTopLayer h1 {
-        font-size: 350%;
-        color: #ffffff;
-        margin: 0;
-    }
+.headerTextFloating {
+    transform: translate(5%, 0) !important;
+}
+
+.headerTextStatic {
+    position: absolute !important;
+    transform: translate(5%, 0) !important;
+    bottom: 60px;
+    top: auto !important;
+}
