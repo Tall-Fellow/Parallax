@@ -3,6 +3,11 @@ body {
     height: 200vh;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    color: #333333;
+}
+
+::selection {
+    background-color: papayawhip;
 }
 
 #headerBottomLayer {
@@ -19,6 +24,7 @@ body {
     text-align: center;
     width: 50%;
     color: #ffffff;
+    text-shadow: 0 1px 5px #4e4e4e;
     margin: 0;
     transition: transform 0.4s ease-out;
 }
@@ -33,3 +39,51 @@ body {
     bottom: 60px;
     top: auto !important;
 }
+
+#about {
+    margin-top: 15vh;
+    float: right;
+    width: 20rem;
+    padding: 0 1rem
+}
+
+    #about a {
+        text-decoration: none;
+    }
+
+    #about i {
+        font-size: 95%;
+    }
+
+#about div:nth-child(2) {
+    margin: 0.5em 0 0.5em 0;
+}
+
+.row {
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.small-img {
+    width: 5rem;
+}
+
+.large-img {
+    width: 10rem;
+    box-shadow: 0 0 5px 1px black
+}
+
+#content {
+    width: 65%;
+    padding: 7vh 0 0 0;
+    margin-left: 5rem;
+    font-size: 120%;
+}
+
+    #content div {
+        line-height: 130%;
+        padding: 2vh 3vw;
+    }
