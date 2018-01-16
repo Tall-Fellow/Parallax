@@ -13,6 +13,7 @@ body {
 #headerBottomLayer {
     background: #000 url("Media/austria.jpg") no-repeat center;
     background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -43,8 +44,7 @@ body {
 #about {
     margin-top: 15vh;
     float: right;
-    width: 20rem;
-    padding: 0 1rem
+    width: 35%;
 }
 
     #about a {
@@ -79,11 +79,33 @@ body {
 #content {
     width: 65%;
     padding: 7vh 0 0 0;
-    margin-left: 5rem;
     font-size: 120%;
+    float: left;
 }
 
     #content div {
         line-height: 130%;
-        padding: 2vh 3vw;
+        padding: 2vh 4vw 2vh 5rem;
     }
+
+@media screen and (max-width: 767px) {
+    #headerTopText {
+        top: 0;
+        font-size: 280%;
+    }
+
+    #about {
+        width: 100%;
+        margin: 5vh 0 2vh 0;
+    }
+
+    #content {
+        width: 100%;
+        text-align: center;
+    }
+
+        #content div {
+            text-align: left;
+            padding: 2vh 3rem 2vh 3rem;
+        }
+}
