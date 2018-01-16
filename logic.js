@@ -1,7 +1,7 @@
 var headerText = document.getElementById("headerTopText");
-var windowInnerHeight = window.innerHeight;
 
 window.addEventListener('scroll', function() {
+    var windowInnerHeight = window.innerHeight;
     var offsetWindow = window.pageYOffset;
     var elementOffset = headerText.offsetTop;
     var distance = (elementOffset - offsetWindow);
